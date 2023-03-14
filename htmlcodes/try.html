@@ -1,0 +1,22 @@
+<html>
+  <body>
+<form action="buyinput.html" method="get" class="both">
+  <button type="submit" class="submitbtn"  onclick="submitbtn()"><i class="fa fa-search"></i></button>
+  <input type="text" name="search-bar" id="search-bar" placeholder="Search for Locality..." required >
+</form>
+</body>
+<script>
+function subbtn(){
+  //gettting the values
+ 
+  var districtname=document.getElementById("search-bar").value;
+  //saving the values in local storage
+ 
+  localStorage.setItem("txtValue",districtname);
+
+  
+}
+   
+   
+</script>
+</html>

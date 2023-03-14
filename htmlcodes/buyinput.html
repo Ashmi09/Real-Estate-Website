@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>buyfrom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="..\csscodes\buyinput.css">
+        <link rel="icon" href="..\image\houseicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+        <script src="..\jscodes\buywishlist.js"></script>
+       
+    </head>
+  <body>
+    <div class="back1">
+        <div class="top">
+          <img src="..\image\houseicon.png" class="up_logo">
+          <div class="District-input">
+           <b style="display:flex;"><div class="District_search"> Buy In</div><span id="District_input"> District</b></span></b>
+          </div>
+          <form action="buyinput.html" method="get" class="both">
+            <button type="submit" class="submitbtn"  onclick="submitbtn()"><i class="fa fa-search" ></i></button>
+            <input type="text" class="search-bar" name="search-bar" id="search-bar" placeholder="Search for Locality..." required >
+          </form>
+          <button type="submit" title="saved" class="saved" onclick="document.location='../htmlcodes/whishlist.html'"><i class="fa fa-heart"></i> Saved</button>
+          <span class="open"><button class="openbtn" onclick="openNav()">☰</button> </span>
+        </div>
+
+        <div class="top2">
+          <select name="property_type" id="property_type">
+            <option value="none" selected disabled hidden >Property Type</option>
+            <option value="apartment">Apartment</option>
+            <option value="duplex">Duplex</option>
+            <option value="independent_house">independent House</option>
+            <option value="independent_floor">Independent Floor</option>
+            <option value="agricultural_land">Agricultural Land</option>
+            <option value="villa">Villa</option>
+            <option value="penthouse">Penthouse</option>
+            <option value="studio">Studio</option>
+          </select>
+
+          <select name="bhk_type" id="bhk_type">
+            <option value="none" selected disabled hidden >BHK Type</option>
+            <option value="1rk">1 Rk</option>
+            <option value="1bhk">1 BHK</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk">3+ BHK</option>
+          </select>
+
+          <!--<select name="price_range" id="price_range">
+            <option value="none" selected disabled hidden >0-5cr</option>
+            <option value="1rk"><input type="range" min="0" max="5cr" value="5cr" class="slider" id="myrange"> </option>
+            
+          </select>-->
+          <div class="price-slider">
+            <button  class="range-slider">
+              <p style="margin-left: 5px; margin-top: 7px;"><i class="fa fa-inr" aria-hidden="true"></i></p><input type="number" class="textrange" value="1000" min="0" max="50000000"/>
+              <p style="margin-top: 6px; margin-left: 6px; padding-right: 10px;">-</p>
+              <p style="margin-left: 5px; margin-top: 7px;"><i class="fa fa-inr" aria-hidden="true"></i></p><input type="number" class="textrange" value="50000000" min="0" max="50000000"/>
+            </button>
+            <div id="myDropdown" class="slider">
+              <input type="range" value="1000" min="1000 " max="50000000" step="500" class="input_range">
+              <input type="range" value="50000000" min="1000 " max="50000000" step="500"  class="input_range">
+            </div>
+          </div> 
+          <div style="margin-top: 15.2px; position: relative;">
+            <a href="#contact" onclick="myFunction()" class="icon"><i class="fa-sharp fa-solid fa-caret-down"></i></a>
+          </div>
+          <select name="sale_type" id="sale_type" >
+            <option value="none" selected disabled hidden>Sale Type</option>
+            <option value="new-projects">New Projects</option>
+            <option value="resale-property">Resale Property</option>
+          </select>
+          <select name="possession_state" id="possession_state">
+            <option value="none" selected disabled hidden>Possession State</option>
+            <option value="ready-to-move">Ready To Move</option>
+            <option value="in-1-year">In 1 Year</option>
+            <option value="in-2-years">In 2 Years</option>
+            <option value="in-3-years">In 3 Years</option>
+            <option value="more-than-3-years">More Than 3 Years</option>
+          </select>
+        </div>
+        
+        <div class="container">
+          <div class="top3">
+            <div style="display: flex; ">
+              <div class="topin">
+                <a href="..\htmlcodes\Home.html" class="homebtn">Home</a>
+                <b>/</b>
+                <span id="inputvalue"></span>
+                <b>/</b>
+                <span id="locality"></span>
+              </div>
+              <input type="button" class="reset" value = "Reset" onclick="history.go(0)" />
+            </div>
+            <br> 
+            <div >
+              Properties For Sale In <span id="inputval"></span> 
+            </div>
+
+          </div>
+        </div>
+        <br>
+
+        <div class="item1" id="item1" >
+            <a class="information" >
+              <div class="infoback info">
+                <!--for image -->
+                <div >
+                  <img src="https://images.dwell.com/photos/6133431940611203072/6460670652388048896/large.jpg" alt="iamge" title="iamge" href="" class="houseimg">
+                </div>
+                <!--after image div-->
+                <div style="font-family: Rubik,Helvetica,sans-serif, Playfair;">
+                  <div class="info" style="display: flex;">
+                    <div class="rate"><b><i class="fa fa-inr" style="font-size: 15px;" aria-hidden="true"></i> 38.9L</b></div>
+                    <div class="share-heart" >
+                      <div class="container">
+                        <button class="share"><i class="fas fa-share-alt"></i></button>
+                        <div class="share-options">
+                          <p class="title"><b>Share</b></p>
+                          <div class="social-media">
+                            <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://web.whatsapp.com/'"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.instagram.com/?hl=en'"><i class="fab fa-instagram"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://twitter.com/i/flow/login'"><i class="fab fa-twitter"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.facebook.com/'"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.linkedin.com/home'"><i class="fab fa-linkedin-in"></i></button>
+                          </div>
+                          <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn" onclick="copyText()">copy</button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="heart" ><i class="fa fa-heart" id="heart" onclick=""></i></button>
+                    </div>
+                  </div>
+                  <div class="price" style="display: flex;">
+                    <div><b>2 BHK Flat </b>
+                    <span> for sale in Gajuwaka</span></div>
+                  </div>
+                  <div class="address">
+                    <a href="#" style="text-decoration: none;"> Novus Florence Village Phase ll Block J</a>
+                  </div>
+                  <div class="area-prc" style="display: flex;">
+                    <div class="area">
+                      <div>Build Up Area</div>
+                      <div>1144 sq.ft</div>
+                    </div>
+                    <div class="div"></div>
+                    <div class="prc">
+                      <div>Avg. Price</div>
+                      <div>₹3.40 K/sq.ft</div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <div class="matter" id="matter">Looking for a 2 BHK Apartment for sale in Visakhapatnam? Your search ends here. Buy this 2 BHK property in Visakhapatnam's finest location, Gajuwaka. This is an owner listed property and there is no brokerage involved. It is on floor 3 out of 5 floors. This Apartment is available at a reasonable price of Rs 38.9 L. Maintenance charges in this property is Rs 1600. The built up area of this property is 1171 Square feet. It is spacious for a family and this property has a carpet area of 775 Square feet</div>
+                    <button class="readmore" id="readmore">Read More</button>
+                    <button class="readless" id="readless">Read Less</button>
+                  </div>
+                  <div class="hori-line"></div>
+                  <div class="ownerdetail">
+                    <div class="name-occupa">
+                      <div>Aashritha Nirman</div>
+                      <div>Developer</div>
+                    </div>
+                    <div class="contact">
+                      <button class="contactbtn" id="contactbtn">Contact</button>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+          
+            <br>
+
+           
+              <div class="infoback info">
+                <!--for image -->
+                <div >
+                  <img src="https://th.bing.com/th/id/OIP.XK1kP8WWn7L65DnywH0DOAHaE8?pid=ImgDet&rs=1" alt="iamge" title="iamge" href="" class="houseimg">
+                </div>
+                <!--after image div-->
+                <div style="font-family: Rubik,Helvetica,sans-serif, Playfair;">
+                  <div class="info" style="display: flex;">
+                    <div class="rate"><b><i class="fa fa-inr" style="font-size: 15px;" aria-hidden="true"></i> 4L</b></div>
+                    <div class="share-heart" >
+                      <div class="container">
+                        <button class="share"><i class="fas fa-share-alt"></i></button>
+                        <div class="share-options">
+                          <p class="title"><b>Share</b></p>
+                          <div class="social-media">
+                            <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://web.whatsapp.com/'"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.instagram.com/?hl=en'"><i class="fab fa-instagram"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://twitter.com/i/flow/login'"><i class="fab fa-twitter"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.facebook.com/'"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.linkedin.com/home'"><i class="fab fa-linkedin-in"></i></button>
+                          </div>
+                          <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn" onclick="copyText()">copy</button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="heart" ><i class="fa fa-heart" id="heart" onclick=""></i></button>
+                    </div>
+                  </div>
+                  <div class="price" style="display: flex;">
+                    <div><b>3 BHK Flat </b>
+                    <span> for sale in Gajuwaka</span></div>
+                  </div>
+                  <div class="address">
+                    <a href="#" style="text-decoration: none;"> BC Road Phase ll Block J</a>
+                  </div>
+                  <div class="area-prc" style="display: flex;">
+                    <div class="area">
+                      <div>Build Up Area</div>
+                      <div>1224 sq.ft</div>
+                    </div>
+                    <div class="div"></div>
+                    <div class="prc">
+                      <div>Avg. Price</div>
+                      <div>₹4.00 K/sq.ft</div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <div class="matter" id="matter">Looking for a 3 BHK Apartment for sale in Visakhapatnam? Your search ends here. Buy this 2 BHK property in Visakhapatnam's finest location, Gajuwaka. This is an owner listed property and there is no brokerage involved. It is on floor 3 out of 5 floors. This Apartment is available at a reasonable price of Rs 38.9 L. Maintenance charges in this property is Rs 1600. The built up area of this property is 1171 Square feet. It is spacious for a family and this property has a carpet area of 775 Square feet</div>
+                    <button class="readmore" id="readmore">Read More</button>
+                    <button class="readless" id="readless">Read Less</button>
+                  </div>
+                  <div class="hori-line"></div>
+                  <div class="ownerdetail">
+                    <div class="name-occupa">
+                      <div>Adhir Sing</div>
+                      <div>Builder And Developer</div>
+                    </div>
+                    <div class="contact">
+                      <button class="contactbtn" id="contactbtn">Contact</button>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+
+              <br>
+              <div class="infoback info">
+                <!--for image -->
+                <div >
+                  <img src="https://photos.zillowstatic.com/fp/f5bbaf65737321b7bb72289ebe51f82d-p_h.jpg" alt="iamge" title="iamge" href="" class="houseimg">
+                </div>
+                <!--after image div-->
+                <div style="font-family: Rubik,Helvetica,sans-serif, Playfair;">
+                  <div class="info" style="display: flex;">
+                    <div class="rate"><b><i class="fa fa-inr" style="font-size: 15px;" aria-hidden="true"></i> 90L</b></div>
+                    <div class="share-heart" >
+                      <div class="container">
+                        <button class="share"><i class="fas fa-share-alt"></i></button>
+                        <div class="share-options">
+                          <p class="title"><b>Share</b></p>
+                          <div class="social-media">
+                            <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://web.whatsapp.com/'"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.instagram.com/?hl=en'"><i class="fab fa-instagram"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://twitter.com/i/flow/login'"><i class="fab fa-twitter"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.facebook.com/'"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.linkedin.com/home'"><i class="fab fa-linkedin-in"></i></button>
+                          </div>
+                          <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn" onclick="copyText()">copy</button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="heart" ><i class="fa fa-heart" id="heart" onclick=""></i></button>
+                    </div>
+                  </div>
+                  <div class="price" style="display: flex;">
+                    <div><b>3 BHK Flat </b>
+                    <span> for sale in Gajuwaka</span></div>
+                  </div>
+                  <div class="address">
+                    <a href="#" style="text-decoration: none;"> Dollphine Hills Sector 2</a>
+                  </div>
+                  <div class="area-prc" style="display: flex;">
+                    <div class="area">
+                      <div>Build Up Area</div>
+                      <div>2224 sq.ft</div>
+                    </div>
+                    <div class="div"></div>
+                    <div class="prc">
+                      <div>Avg. Price</div>
+                      <div>₹10.00 K/sq.ft</div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <div class="matter" id="matter">Looking for a 3 BHK Apartment for sale in Visakhapatnam? Your search ends here. Buy this 2 BHK property in Visakhapatnam's finest location, Gajuwaka. This is an owner listed property and there is no brokerage involved. It is on floor 3 out of 5 floors. This Apartment is available at a reasonable price of Rs 38.9 L. Maintenance charges in this property is Rs 1600. The built up area of this property is 1171 Square feet. It is spacious for a family and this property has a carpet area of 775 Square feet</div>
+                    <button class="readmore" id="readmore">Read More</button>
+                    <button class="readless" id="readless">Read Less</button>
+                  </div>
+                  <div class="hori-line"></div>
+                  <div class="ownerdetail">
+                    <div class="name-occupa">
+                      <div>Sophia Maharana</div>
+                      <div>Owner</div>
+                    </div>
+                    <div class="contact">
+                      <button class="contactbtn" id="contactbtn">Contact</button>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+
+              <br>
+              <div class="infoback info">
+                <!--for image -->
+                <div >
+                  <img src="https://th.bing.com/th/id/OIP.NIslxOvFqk7yjndoh92lnwHaFj?pid=ImgDet&w=1024&h=768&rs=1" alt="iamge" title="iamge" href="" class="houseimg">
+                </div>
+                <!--after image div-->
+                <div style="font-family: Rubik,Helvetica,sans-serif, Playfair;">
+                  <div class="info" style="display: flex;">
+                    <div class="rate"><b><i class="fa fa-inr" style="font-size: 15px;" aria-hidden="true"></i> 86L</b></div>
+                    <div class="share-heart" >
+                      <div class="container">
+                        <button class="share"><i class="fas fa-share-alt"></i></button>
+                        <div class="share-options">
+                          <p class="title"><b>Share</b></p>
+                          <div class="social-media">
+                            <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://web.whatsapp.com/'"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.instagram.com/?hl=en'"><i class="fab fa-instagram"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://twitter.com/i/flow/login'"><i class="fab fa-twitter"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.facebook.com/'"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-media-btn" onclick="document.location='https://www.linkedin.com/home'"><i class="fab fa-linkedin-in"></i></button>
+                          </div>
+                          <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn" onclick="copyText()">copy</button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="heart" ><i class="fa fa-heart" id="heart" onclick=""></i></button>
+                    </div>
+                  </div>
+                  <div class="price" style="display: flex;">
+                    <div><b>4 BHK Flat </b>
+                    <span> for sale in Gajuwaka</span></div>
+                  </div>
+                  <div class="address">
+                    <a href="#" style="text-decoration: none;">Krantinagar near Nausena Bagh </a>
+                  </div>
+                  <div class="area-prc" style="display: flex;">
+                    <div class="area">
+                      <div>Build Up Area</div>
+                      <div>3224 sq.ft</div>
+                    </div>
+                    <div class="div"></div>
+                    <div class="prc">
+                      <div>Avg. Price</div>
+                      <div>₹12.00 K/sq.ft</div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <div class="matter" id="matter">Looking for a 4 BHK Apartment for sale in Visakhapatnam? Your search ends here. Buy this 2 BHK property in Visakhapatnam's finest location, Gajuwaka. This is an owner listed property and there is no brokerage involved. It is on floor 3 out of 5 floors. This Apartment is available at a reasonable price of Rs 38.9 L. Maintenance charges in this property is Rs 1600. The built up area of this property is 1171 Square feet. It is spacious for a family and this property has a carpet area of 775 Square feet</div>
+                    <button class="readmore" id="readmore">Read More</button>
+                    <button class="readless" id="readless">Read Less</button>
+                  </div>
+                  <div class="hori-line"></div>
+                  <div class="ownerdetail">
+                    <div class="name-occupa">
+                      <div>Ravi Kumar Bagadu</div>
+                      <div>Builder And Developer</div>
+                    </div>
+                    <div class="contact">
+                      <button class="contactbtn" id="contactbtn">Contact</button>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            
+            
+          </div>
+         
+          <div id="openform" class="getform" >
+            <!--on click form -->
+          </div>
+
+
+          
+        </div>
+    </div>
+  
+
+  </body>  
+  <script>
+
+(function() {
+ 
+ var parent = document.querySelector(".price-slider");
+ if(!parent) return;
+
+ var
+   rangeS = parent.querySelectorAll("input[type=range]"),
+   numberS = parent.querySelectorAll("input[type=number]");
+
+ rangeS.forEach(function(el) {
+   el.oninput = function() {
+     var slide1 = parseFloat(rangeS[0].value),
+         slide2 = parseFloat(rangeS[1].value);
+
+     if (slide1 > slide2) {
+       [slide1, slide2] = [slide2, slide1];
+     }
+
+     numberS[0].value = slide1 ;
+     numberS[1].value = slide2;
+   }
+ });
+
+ numberS.forEach(function(el) {
+   el.oninput = function() {
+     var number1 = parseFloat(numberS[0].value),
+         number2 = parseFloat(numberS[1].value);
+     
+     if (number1 > number2) {
+       var tmp = number1;
+       numberS[0].value = number2;
+       numberS[1].value = tmp;
+     }
+
+     rangeS[0].value = number1 ;
+     rangeS[1].value = number2;
+
+   }
+ });
+
+})();
+
+
+    //displaying the value from local storage to another page by their respective Ids
+    document.getElementById("District_input").innerHTML=localStorage.getItem("txtValue");
+    document.getElementById("inputvalue").innerHTML=localStorage.getItem("txtValue");
+    document.getElementById("inputval").innerHTML=localStorage.getItem("txtValue");
+    document.getElementById("locality").innerHTML=localStorage.getItem("txtValue2");
+    function submitbtn(){
+    //gettting the values
+    var b = document.getElementById("search-bar").value;
+    localStorage.setItem("txtValue2",b);
+    }
+//share button 
+    const shareBtn = document.querySelectorAll('.share');
+const shareOptions = document.querySelectorAll('.share-options');
+for (let i=0;i<shareBtn.length;i++){
+shareBtn[i].addEventListener('click', () => {
+    shareOptions[i].classList.toggle('active');
+})}
+
+function copyText() {
+      
+/* Copy text into clipboard */
+      navigator.clipboard.writeText
+          ("https://example.com/share");
+  }
+
+//read more button
+const less= document.querySelectorAll('.readless')
+const more= document.querySelectorAll('.readmore')
+const para= document.querySelectorAll('.matter')
+for (let i = 0; i < less.length ; i++) {
+  more[i].addEventListener('click',() =>{
+  para[i].classList.toggle('activ');
+  more[i].classList.toggle('activ');
+  less[i].classList.toggle('activ');
+  
+})
+//read less button
+ less[i].addEventListener('click',() =>{
+  para[i].classList.toggle('act');
+  less[i].classList.toggle('act');
+  more[i].classList.toggle('act');
+ 
+})}
+
+
+
+  </script>
+
+</html>

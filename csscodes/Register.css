@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.back{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(114, 111, 111, 0.3),rgba(143, 43, 43, 0.3)),url(https://wallpapercave.com/wp/wp2003549.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    position: fixed;
+    display:inline-block;
+}
+    
+body{
+    background-color:black;
+}
+.regis-form{
+    height:410px;
+    width:390px;
+    margin-top:70px ;
+    margin-left:400px;
+    padding:6px;
+    background-color:rgb(6, 2, 33);
+    position:relative;
+
+
+}
+.button-box{
+    width:400px;
+    margin:20px auto;
+    margin-left:90px;
+    position:relative;
+    
+}
+.reg-log{
+    height:30px;
+    width:100px;
+    background:linear-gradient(to right, #ff105f,#ca8806);
+    font-size:20px;
+    border:2px solid rgb(117, 74, 17);
+    cursor:pointer;
+    border-radius:20px;
+}
+.reg-log:hover{
+    background:linear-gradient(to right, #c62057,#644404);
+    color:white;
+}
+.input-name{
+    margin:10px;
+    margin-left:86px;
+    display:inline-block;
+}
+.input-email{
+    margin:10px;
+    margin-left:67px;  
+}
+.input-Pass{
+    margin:10px;
+    margin-left:60px;  
+} 
+.con-Pass{
+    margin:10px;
+    margin-left:0px; 
+} 
+
+.input-num{
+    margin:10px; 
+    margin-left:78px;
+    margin-bottom:20px;
+}
+.input-gen{
+    margin-top:40px;  
+}
+.gen{
+    margin:10px;  
+}
+.submit-button{
+    margin:10px;
+    margin-left:120px;
+    font-size:17px;
+    padding:8px;
+    background-color:#b37a09;
+}
+.submit-button:hover{
+    background-color: gray;
+}

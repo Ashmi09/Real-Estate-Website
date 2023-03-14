@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="..\csscodes\Home.css">
+<link rel="icon" href="..\image\houseicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="..\jscodes\home.js"></script>
+</head>
+<body>
+
+<div class="back1">
+  <div class="top">
+    <span class="open"><button class="openbtn" onclick="openNav()">☰</button> </span>
+    <img src="..\image\houseicon.png" class="up_logo">
+
+
+    <div class="buy-property" >
+      <button class="buybtn" >
+        Buy Property <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="link" >
+        <div>
+          <h2 style="color:brown"><u>Discription</u></h2><br>
+          <p>This page will contain all the details about the Property <br>you want to buy at your searched location and you will be <br>able to filter out the properties according to your choice. </p><br>
+          <hr>
+        </div>
+        <div class="search-box">
+          <form action="buyinput.html"  >
+            <input type="text" name="buysearch" id="buysearch1"  class="search-input" placeholder=" Search for District..." required>
+            <button type="submit" class="searchbth" onclick="subbtn()" ><i class="fa fa-search" ></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="buy-property1">
+      <button class="rentbtn" >
+        Rent <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="link1" >
+        <div>
+          <h2 style="color:brown"><u>Discription</u></h2><br>
+          <p>This page will contain all the details about the Property <br>you want as rent at your searched location and you will be <br>able to filter out the properties according to your choice. </p><br>
+          <hr>
+        </div>
+        <div class="search-box">
+          <form action="" method="get" >
+            <input type="text" name="search" id="sear"  class="search-input" placeholder=" Search for locality..." required>
+            <button type="submit" class="searchbth"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="buy-property2">
+      <button class="sellbtn" >
+        Sell <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="link2" >
+        <div>
+          <h2 style="color:brown"><u>Discription</u></h2><br>
+          <p>here you will be able to post your properties <br>which you want to sell to the customers by providing <br>all the necessary details about the property.
+          <hr>
+        </div>
+        <div class="search-box">
+          <form action="" method="get" >
+            <input type="text" name="search" id="sear"  class="search-input" placeholder=" Search for locality..." required>
+            <button type="submit" class="searchbth"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="buy-property3">
+      <button class="leasebtn" >
+        Lease <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="link3" >
+        <div>
+          <h2 style="color:brown"><u>Discription</u></h2><br>
+          <p>here you will be able to post your properties <br>which you want to make avalible for rent to the customers <br>by providing all the necessary details about the property.
+          <hr>
+        </div>
+        <div class="search-box">
+          <form action="" method="get" >
+            <input type="text" name="search" id="sear"  class="search-input" placeholder=" Search for locality..." required>
+            <button type="submit" class="searchbth"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+   <div class="buy-property4">
+      <button class="log-in" >Login <i class="fa fa-caret-down"> </i></button>
+      <div class="link4">
+        <div >
+          <button onclick="document.location='../htmlcodes/login.html'" class="loginbtn"><b>Login</b></button>
+        </div><br>
+        <div class="reg-div">
+          <p>New Customer? <button onclick="document.location='../htmlcodes/Register.html'" class="reg"><b>Register</b></button> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text">
+    <p>That house you looked at today and wanted to think about until tomorrow,<br><br>may be the same house someone looked at yesterday and will buy today. </p>
+  </div>
+
+  <div class="bar">
+    <div class="forbtn">
+      <div>
+        <button class="button-all-four" onclick="document.location='../htmlcodes/Home.html'" style="margin-left: 30px;">Buy</button>
+      </div>
+      <div>
+        <button class="button-all-four" onclick="document.location='../htmlcodes/rent.html'" style="margin-left: 80px;">Rent</button>
+      </div>
+      <div>
+        <button class="button-all-four" onclick="document.location='../htmlcodes/sell.html'" style="margin-left: 90px;">Sell</button>
+      </div>
+      <div>
+        <button class="button-all-four" onclick="document.location='../htmlcodes/lease.html'" style="margin-left: 90px;">Lease</button>
+      </div>
+    </div>
+    <div class="outline">
+          <form action="buyinput.html" method="get" style="display: flex;" >
+            <input type="text" name="buysearch" id="buysearch" placeholder="Search for District..." required  class="main-search" >
+            <button type="submit" class="search-button" onclick="subbtn()">Search <i class="fa fa-search"></i></button>
+          </form>
+    </div>
+  </div>
+
+</div>
+
+<div id="mySidepanel" class="sidepanel">
+  <div class="back">
+    <div class="logo">
+      <img src="..\image\houseicon.png" class="logo" >
+    </div>
+    <div>
+      <span class="wel"><h3>Welcome</h3></span>
+    </div>
+  </div>
+  <div  class="container">
+    <h3>Dashboard</h3>
+  </div>
+  <hr>
+  <div >
+    <a href="javascript:void(0)" class="close"  onclick="closeNav()">× close</a>
+  </div>
+  <div>
+    <a href="#" class="about" title="About"><i class="fa fa-users fa-fw"></i>  About</a>
+    <a href="..\htmlcodes\login.html" class="logout" title="Logout" ><i class="fa fa-eye fa-fw"></i> Logout</a>
+  </div>
+</div>
+
+
+<!--dashbord after iamage-->
+   
+</body>
+
+</html> 

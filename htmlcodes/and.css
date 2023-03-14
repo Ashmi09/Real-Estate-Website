@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+  position: relative;
+  background-color: rgb(232, 230, 230);
+  
+}  
+.top{
+    display: flex;
+    background-color: rgb(113, 43, 253);
+    height: 40px;
+    max-width: 100%;
+    padding: 10px;
+    top:0%;
+    position: relative;
+}
+.up_logo{
+    width:46px;
+    margin-left: 20px;
+    position: relative;
+   
+  }
+.submitbtn{
+  margin-left: 50px;
+  font-size: 15px;
+  background-color: white;
+  border: none;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+input{
+  font-size: 20px;
+  outline: none;
+  background-color: white;
+  border: none;
+ 
+
+}
+.both{
+  padding: 0px 30px;
+  font-size: 20px;
+  background-color: white;
+  width: 30px;
+  display: contents;
+}
+
+.saved{
+  margin-left: 300px;
+  font-size: 15px;
+  background-color:rgb(105, 30, 254) ;
+  border: none;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+.openbtn{
+  background-color: rgb(105, 30, 254);
+  margin-left: 30px;
+  margin-top: 10px;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.top2{
+  background-color: black;
+  height: 50px;
+  display: flex;
+  min-width: 100%;
+
+}
+select{
+      outline: none;
+      height: 30px;
+      margin-top: 10px;
+      margin-left: 40px;
+}
+
+.slider{
+  height: 0px;
+  width: 300px;
+  background-color: white;
+  padding:30px;
+  position: absolute;
+  border-radius: 3px;
+  margin-left: 20px;
+  display: none;
+  
+  
+}
+.slider .input_range{
+  display: block;
+}
+
+.price-slider:hover .input_range {background-color: #ddd;
+}
+.price-slider:hover .slider {display: block;
+}
+
+.show {display: block;}
+
+.textrange{
+  margin-left: 10px;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.input_range{
+  -webkit-appearance: none;
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+}
+.range-slider{
+  width: 290px;
+  height: 32px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 9px;
+}
+
+ .icon{
+  background-color: rgb(255, 136, 127);
+  position: relative;
+  color: rgb(15, 14, 14);
+  padding: 7.4px 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+ }
+
+input[type=range]::-webkit-slider-runnable-track{
+  width: 400px;
+  height: 7px;
+  background: rgb(108, 107, 107);
+  border: none;
+  border-radius: 3px;
+ 
+}
+input[type=range]::-webkit-slider-thumb{
+ -webkit-appearance: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(105, 30, 254);
+  margin-top: -4px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.price-slider {
+ position: relative;
+ display: inline-block;
+}
+.price-slider svg,
+.price-slider input[type=range] {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.top3{
+  height:60px;
+  color: rgb(90, 89, 89);
+  
+}
+.topin{
+  margin-top: 20px;
+}
+.homebtn{
+  text-decoration: none;
+  color:rgb(90, 89, 89);
+}
+
+.houseimg{
+  width: 290px;
+  height: 200px;
+}
+.infoback {
+  display: flex;
+  background-color: white;
+  width: 60%;
+  margin-top: 10px;
+  
+}
+.information{
+  text-decoration: none;
+}
+.rate{
+  color: black;
+  font-size: 16.5px;
+  margin: 20px 0px 0px 20px;
+  letter-spacing: 0.6px;
+}
+.share-heart{
+  display: flex;
+  color: black;
+  float: right;
+  margin: 20px 0px 0px 300px;
+  font-size: 20px;
+}
+#heart{
+  margin-left: 10px;
+}
+.District-input{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 16px;
+  display: flex;
+  margin: 10px 0px 0px 150px;
+  color:rgb(245, 241, 241);
+ 
+}
+
+.District_search{
+  display: flex;
+  width: 65px;
+}

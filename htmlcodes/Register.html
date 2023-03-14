@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="..\csscodes\Register.css">
+        <link rel="icon" href="..\image\houseicon.png">
+
+    </head>
+    <body >
+        <div class="back">
+            <div class="regis-form">
+                <div class="button-box">
+                    <button onclick="document.location='../htmlcodes/Register.html'" type="button" class="reg-log">Register</button>
+                    <button onclick="document.location='../htmlcodes/login.html'" type="button" class="reg-log"> Log In</button>
+                </div>
+                <form  action="" method="get" class="user-input">
+                    <label style="color:white " for="name_of" >Name :</label>
+                    <input type="name" name="name" class="input-name" id="name_of" placeholder="Full Name" required />
+                <br>
+                    <label style="color:white" for="email_of">Email Id :</label>
+                    <input type="email" name="emailid" class="input-email" id="email_of" placeholder="xxx@gmail.com" required />
+                <br>
+                    <label style="color:white" for="pass_of">Password :</label>
+                    <input type="password" name="password" class="input-Pass" id="pass_of" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Should contain at least one number,one uppercase and lowercase letter, 
+                    and at least 8 or more characters" required placeholder="xxxxxxxxxx" required />
+                <br>
+                    <label style="color:white" for="con_pass">Confirm Password :</label>
+                    <input type="password" name="ConfirmPassword" class="con-Pass" id="con_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Should contain at least one number,one uppercase and lowercase letter, 
+                    and at least 8 or more characters" required placeholder="xxxxxxxxxx" required/>
+                <br>
+                    <label style="color:white" for="ph">Phone :</label>
+                    <input type="number" name="number" class="input-num" id="ph" placeholder="xxxxxx" required/>
+                <br>
+                    <label style="color:white" class="input-gen">Gender :</label>
+                <br>
+                    <input type="radio" class="gen" name="gender" id="male"/>
+                    <label style="color:white" for="male">Male</label>
+                    <input type="radio" class="gen" name="gender" id="female"/>
+                    <label style="color:white" for="female">Female</label>
+                    <input type="radio" class="gen" name="gender" id="others"/>
+                    <label style="color:white" for="others">Others</label>
+                <br>
+                    <button type="submit" class="submit-button"><b>Create Account</b></button>
+                </form>
+
+
+            </div>
+        </div>
+    </body>
+</html>
